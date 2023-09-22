@@ -1,0 +1,22 @@
+.cabeçalho__menu-hamurguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../IMG/Menu.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
