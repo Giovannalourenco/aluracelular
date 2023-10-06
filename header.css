@@ -3,6 +3,7 @@
     height: 24px;
     background-image: url("../IMG/Menu.svg");
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
 }
 
@@ -10,6 +11,7 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .container {
@@ -19,4 +21,20 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
 }
